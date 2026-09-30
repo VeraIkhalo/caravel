@@ -1,0 +1,25 @@
+{
+  "name": "reservation-endpoint-exercise",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:schema": "tsx scripts/database.ts schema",
+    "db:seed": "tsx scripts/database.ts seed",
+    "dev": "node api.js && tsx watch src/server.ts",
+    "start": "node api.js && tsx src/server.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/pg": "^8.11.11",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
